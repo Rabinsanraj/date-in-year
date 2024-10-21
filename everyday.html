@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        font-family: arial,sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 200px;
+        background-color: rgba(51, 49, 46, 0.856);
+        }
+        div.in{
+            border: 2px solid rgb(126, 118, 118);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 6px 4px 3px 3px rgba(0, 0, 0, 0.76);
+            background-color: white;
+        }
+        @media(min-width: 768px){
+            body{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <p id="demo"></p>
+    <div class="in">
+    <input type="number" id="y1" placeholder="Enter Starting Year"><br><br>
+    <input type="number" id="y2" placeholder="Enter Ending Year"><br><br>
+    <input type="number" id="month" placeholder="Enter Month 0 to 11 "><br><br>
+    <input type="number" id="date" placeholder="Enter date based on month"><br><br>
+    <input type="number" id="day" placeholder="Enter Day 0 to 6"><br><br>
+    <div>
+        <button onclick="calculate('cal')">result</button>
+    </div>
+    <div>
+        <p id="result"></p>
+        <script src="everyday.js"></script>
+    </div>
+    </div>
+</body>
+</html>

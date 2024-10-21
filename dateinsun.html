@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let year;
+        for(year=2014; year<=2030; year++){
+            let d=new Date(year,0,1);
+           if(d.getDay()===0){
+              document.write("sunday in year" + year + "<br>");
+        }
+    }
+    </script>
+</body>
+</html>
